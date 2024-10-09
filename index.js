@@ -36,6 +36,25 @@ console.log(isNegative(-8));
 */
 
 const betweenFiveAndTwenty = (num) => {
-    console.log(num >= 5 && num <= 20);
+  console.log(num >= 5 && num <= 20);
 };
 betweenFiveAndTwenty(100);
+
+
+const sumOfThreeOrFive = () => {
+    let sum = 0
+    for (let i = 1; i < 1000; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            sum += i;
+            
+        }
+    }
+    return sum;
+};
+console.log(sumOfThreeOrFive());
+
+const isAllLowerCase = (n) => {
+    return n.toLowerCase() === n
+
+};
+console.log(isAllLowerCase("Food"))
